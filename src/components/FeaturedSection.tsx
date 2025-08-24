@@ -40,7 +40,7 @@ const FeaturedSection = () => {
                 asChild 
                 className="bg-primary hover:bg-primary/90 text-primary-foreground"
               >
-                <Link to="/knitting">
+                <Link to="/shop">
                   Explore Patterns
                 </Link>
               </Button>
@@ -69,7 +69,7 @@ const FeaturedSection = () => {
                 asChild 
                 className="bg-primary hover:bg-primary/90 text-primary-foreground"
               >
-                <Link to="/beads">
+                <Link to="/shop">
                   Shop Beads
                 </Link>
               </Button>

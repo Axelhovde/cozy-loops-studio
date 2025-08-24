@@ -4,7 +4,7 @@ import heroImage from "@/assets/hero-yarn.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+    <section className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -23,23 +23,23 @@ const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button 
+          {/* <Button 
             asChild 
             size="lg" 
             className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg shadow-warm"
           >
             <Link to="/knitting">
-              Browse Patterns
+              Shop now
             </Link>
-          </Button>
+          </Button> */}
           <Button 
             asChild 
             variant="outline" 
             size="lg"
-            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-6 text-lg"
+            className="mt-8 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-6 text-lg"
           >
-            <Link to="/beads">
-              Shop Beads
+            <Link to="/shop">
+              Shop now
             </Link>
           </Button>
         </div>

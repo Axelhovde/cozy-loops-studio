@@ -19,7 +19,7 @@
     --popover-foreground: 20 10% 15%;
 
     /* Primary - warm sage green */
-    --primary: 95 25% 45%;
+    --primary: 205 41% 64.7%;
     --primary-foreground: 30 30% 98%;
 
     /* Secondary - dusty rose */
@@ -48,7 +48,7 @@
 
     /* Custom design tokens */
     --warm-cream: 30 30% 98%;
-    --sage-green: 95 25% 45%;
+    --sage-green: 205 41% 64.7%;
     --dusty-rose: 15 25% 75%;
     --terracotta: 25 35% 65%;
     --soft-brown: 30 15% 60%;

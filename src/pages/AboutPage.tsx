@@ -106,16 +106,16 @@ const AboutPage = () => {
           
           <div className="bg-card rounded-lg p-8 shadow-soft">
             <div className="w-32 h-32 bg-gradient-sage rounded-full mx-auto mb-6 flex items-center justify-center">
-              <span className="text-4xl font-serif text-primary-foreground">SJ</span>
+              <span className="text-4xl font-serif text-primary-foreground">NW</span>
             </div>
             <h3 className="text-2xl font-serif font-bold text-primary mb-4">
-              Sarah Johnson
+              Natalie Winger
             </h3>
             <p className="text-muted-foreground mb-6">
               Founder & Pattern Designer
             </p>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              With over 15 years of knitting experience and a background in textile design, Sarah brings both technical expertise and artistic vision to every Little Loops creation. When not designing patterns, you'll find her experimenting with new color combinations and teaching local crafting workshops.
+              TODO - Cool background story about Natalie, her passion for knitting, and how she started Little Loops. Mention her favorite projects, inspirations, and what she loves most about the crafting community.
             </p>
           </div>
         </div>
