@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Heart, Scissors, Palette } from "lucide-react";
+import backgroundImage from "@/assets/hero-beads.png";
 
 const AboutPage = () => {
   return (
@@ -9,8 +10,18 @@ const AboutPage = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="py-16 px-4 bg-gradient-warm">
-        <div className="container mx-auto text-center">
+      <section className="relative py-16 px-4 overflow-hidden">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${backgroundImage})` }}
+        >
+          {/* 70% overlay (same as Hero) */}
+          <div className="absolute inset-0 bg-background/70" />
+        </div>
+
+        {/* Content */}
+        <div className="container mx-auto text-center relative z-10">
           <h1 className="text-5xl md:text-6xl font-serif font-bold text-primary mb-6">
             About Little Loops
           </h1>
@@ -25,17 +36,20 @@ const AboutPage = () => {
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-serif font-bold text-primary mb-6">
-              Our Story
+              My Story
             </h2>
             <div className="prose prose-lg mx-auto text-muted-foreground">
               <p className="mb-6">
-                Little Loops began as a passion project in a cozy corner of our home, where the gentle click of knitting needles and the soft rustle of yarn created a symphony of creativity. What started as a personal love for crafting has blossomed into a community of makers who share our dedication to quality and beauty.
+                A couple of months ago, I picked up a new hobby that quickly grew into a passion: making beads and crafting jewelry. What started as simple curiosity soon became a way for me to slow down, create with my hands, and bring small pieces of beauty into everyday life.
               </p>
               <p className="mb-6">
-                We believe that every stitch tells a story, every bead holds a memory, and every handmade piece carries a piece of the maker's heart. Our carefully curated collection of knitting patterns and premium beads reflects our commitment to supporting both beginning crafters and seasoned artisans on their creative journeys.
+               Each necklace and bracelet I make is put together with care, focusing on colors, textures, and the joy of creating something unique. For me, it’s not just about beads — it’s about the stories, memories, and little sparks of happiness that handmade pieces can carry.
               </p>
+              <p className="mb-6">
+               Right now, I’m excited to be sharing my work at local markets and I’m working on turning this website into a place where you can explore and order my creations online.
+               </p>
               <p>
-                At Little Loops, we're not just selling supplies – we're nurturing a community where creativity flourishes, skills are shared, and beautiful things are born from simple materials and endless imagination.
+                Thank you for being here at the very beginning of this journey — I can’t wait to see where it goes, and I hope you find something that speaks to you.
               </p>
             </div>
           </div>
@@ -47,7 +61,7 @@ const AboutPage = () => {
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-serif font-bold text-primary mb-6">
-              Our Values
+              My Values
             </h2>
           </div>
 
@@ -61,7 +75,7 @@ const AboutPage = () => {
                   Crafted with Love
                 </h3>
                 <p className="text-muted-foreground">
-                  Every pattern we design and every bead we select is chosen with care and attention to detail, ensuring quality that you can feel in every piece.
+                  Every bead we select is chosen with care and attention to detail, ensuring quality that you can feel in every piece.
                 </p>
               </CardContent>
             </Card>

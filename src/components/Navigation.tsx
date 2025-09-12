@@ -47,12 +47,12 @@ const Navigation = () => {
             >
               Home
             </Link>
-            <Link 
+            {/* <Link 
               to="/store" 
               className={`transition-colors hover:text-primary ${isActive('/store') ? 'text-primary font-medium' : 'text-muted-foreground'}`}
             >
               Shop
-            </Link>
+            </Link> */}
             {/* <Link 
               to="/beads" 
               className={`transition-colors hover:text-primary ${isActive('/beads') ? 'text-primary font-medium' : 'text-muted-foreground'}`}
@@ -69,7 +69,7 @@ const Navigation = () => {
 
           {/* Right side icons */}
           <div className="flex items-center space-x-4 pt-2">
-            {[{
+            {[/* {
               icon: <Search className="h-5 w-5" />,
               label: "Search",
               onClick: () => {}
@@ -77,7 +77,9 @@ const Navigation = () => {
               icon: <ShoppingBag className="h-5 w-5" />,
               label: "Cart",
               onClick: () => {}
-            }, {
+            }, 
+             */
+            {
               icon: <UserRound className="h-5 w-5" />,
               label: userName || "Log In",
               onClick: () => navigate(userName ? "/profile" : "/login")
@@ -121,13 +123,13 @@ const Navigation = () => {
               >
                 Home
               </Link>
-              <Link 
+{/*               <Link 
                 to="/store" 
                 className={`px-4 py-2 rounded transition-colors ${isActive('/store') ? 'bg-secondary text-primary' : 'hover:bg-secondary'}`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Shop
-              </Link>
+              </Link> */}
 {/*               <Link 
                 to="/" 
                 className={`px-4 py-2 rounded transition-colors ${isActive('/beads') ? 'bg-secondary text-primary' : 'hover:bg-secondary'}`}
