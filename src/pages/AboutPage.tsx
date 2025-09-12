@@ -129,7 +129,10 @@ const AboutPage = () => {
               Founder & Pattern Designer
             </p>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              TODO - Cool background story about Natalie, her passion for knitting, and how she started Little Loops. Mention her favorite projects, inspirations, and what she loves most about the crafting community.
+              Natalie has always loved creating with her hands, and beads quickly captured her heart. What started as a hobby soon grew into Little Loops, a place where she shares her passion for crafting unique jewelry and decorative pieces. Natalie draws inspiration from colors, textures, and the little details that make every design special.
+            </p>
+            <p className="mt-6 text-muted-foreground max-w-2xl mx-auto">
+              She loves seeing how a simple bead can transform into something beautiful and enjoys sharing that joy with the crafting community. At Little Loops, every piece reflects her creativity and her belief that crafting is about connection, expression, and endless possibilities.
             </p>
           </div>
         </div>
