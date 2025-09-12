@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-yarn.jpg";
+import heroImage from "@/assets/hero-beads.png";
 import React from "react";
 import { supabase } from "../helper/supabaseClient";
 
