@@ -26,7 +26,7 @@ const Navigation = () => {
     };
     getUser();
   }, []);
-
+"test"
     
   useEffect(() => {
     const handleScroll = () => {
