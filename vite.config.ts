@@ -4,7 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/",   // ✅ root, works with custom domain on GitHub Pages
+  base: "/cozy-loops-studio/",   // ✅ root, works with custom domain on GitHub Pages
   server: {
     host: "::",
     port: 8080,
