@@ -13,6 +13,8 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [userName, setUserName] = useState<string | null>(null);
   const isHomePage = location.pathname === "/";
+  const [scrolled, setScrolled] = useState(false);
+  
   
   const isActive = (path: string) => location.pathname === path;
  useEffect(() => {
@@ -22,12 +24,27 @@ const Navigation = () => {
         setUserName(user.user_metadata?.full_name || user.email || null);
       }
     };
-
     getUser();
   }, []);
 
+    
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 100); // adjust threshold as needed
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
-    <nav className={`sticky top-0 z-50 hover:bg-background/95 duration-700 border-border ${isHomePage ? "bg-transparent" : "bg-background/95 border-b backdrop-blur"}`}>
+    <nav className={`sticky top-0 z-50 duration-700 border-border
+    ${
+      !isHomePage || scrolled
+        ? "bg-background/95 border-b backdrop-blur"
+        : "bg-transparent"
+    }
+    hover:bg-background/95
+  `}>
       {/* Top banner */}
       {/* <div className="bg-sage-green text-primary-foreground py-2 text-center text-sm">
         Free shipping on orders over $75

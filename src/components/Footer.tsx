@@ -51,20 +51,21 @@ const Footer = () => {
   return (
     <footer className="bg-secondary/30 border-t border-border ">
       <div className="container mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 md:gap-40 gap-8 ml-[5%] mr-[5%]">
           {/* Brand */}
-          <div className="col-span-2 md:col-span-1 ml-24">
+          <div className="col-span-2 md:col-span-1">
             <h3 className="text-2xl font-serif font-bold text-primary mb-4">
               Little Loops
             </h3>
             <p className="text-muted-foreground mb-6">
-              Creating beautiful handmade pieces with love, one loop at a time.
+              Creating beautiful handmade pieces with love.
             </p>
             
             <h4 className="font-semibold text-primary mt-4">Customer Care</h4>
-            <div className="space-y-2">
-              <a href="#" className="block text-muted-foreground hover:text-primary transition-colors">
-                Contact Us
+            <div className="flex flex-row space-x-2 mt-2">
+              <a href="https://www.instagram.com/shoplittleloopsstudio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="inline-flex items-center text-muted-foreground hover:text-primary transition-colors space-x-2">
+                <span>Contact us through Instagram</span>
+                <Instagram className="h-5 w-5" />
               </a>
               {/* <a href="#" className="block text-muted-foreground hover:text-primary transition-colors">
                 Shipping Info
@@ -116,7 +117,7 @@ const Footer = () => {
           </div> */}
 
           {/* Newsletter */}
-          <div className="md:col-span-1 ml-40 mr-20">
+          <div className="md:col-span-1">
             <h4 className="font-semibold text-primary mb-4">Stay Connected</h4>
             <p className="text-muted-foreground mb-4 text-sm">
               Get the latest information from our newsletter delivered to your inbox.

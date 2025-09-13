@@ -62,17 +62,17 @@ const Hero = () => {
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
           Premium crafted beaded necklaces.
         </p>
-        <p className="text-xl md:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+        <p className="text-xl md:text-lg text-muted-foreground mb-8 max-w-full md:max-w-2xl mx-auto">
           This website is currently under construction. In the meantime, please join our newsletter to be notified when we launch!
         </p>
 
-        <form className="flex justify-center w-full" onSubmit={handleNewsletterSignup}>
+        <form className="flex flex-col md:flex-row justify-center w-full items-center gap-4" onSubmit={handleNewsletterSignup}>
           <input
             type="email"
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="p-3 w-[400px] rounded-lg border border-input bg-card text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+            className="p-3 md:w-[400px] w-[80%] rounded-lg border border-input bg-card text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
           />
           <Button
             type="submit"
