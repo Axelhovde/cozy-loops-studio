@@ -140,10 +140,10 @@ const AboutPage = () => {
               Founder & Creator
             </p>
             <p className="text-muted-foreground mb-6">
-              Natalie has always loved creating with her hands, and beads quickly captured her heart. What started as a hobby soon grew into Little Loops, a place where she shares her passion for crafting unique jewelry and decorative pieces. Natalie draws inspiration from colors, textures, and the little details that make every design special.
+              I have always loved creating with my hands, and beads quickly captured my heart. What started as a hobby soon grew into Little Loops, a place where I share my passion for crafting unique jewelry and decorative pieces. I draw inspiration from colors, textures, and the little details that make every design special.
             </p>
             <p className="text-muted-foreground">
-              She loves seeing how a simple bead can transform into something beautiful and enjoys sharing that joy with the crafting community. At Little Loops, every piece reflects her creativity and her belief that crafting is about connection, expression, and endless possibilities.
+              I love seeing how a simple bead can transform into something beautiful and enjoy sharing that joy with the crafting community. At Little Loops, every piece reflects my creativity and my belief that crafting is about connection, expression, and endless possibilities.
             </p>
           </div>
         </div>
